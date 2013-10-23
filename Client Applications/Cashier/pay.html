@@ -1,0 +1,49 @@
+<html>
+	<head>
+  	    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+    
+    	<script >
+ 			function CloseAndRefresh() 
+ 			 {
+ 				//opener.location.reload(true);
+ 				//opener.document.openerform.coffee.value=document.popupform.coffee.value; 
+ 				//document.popupform.id.value = opener.document.openerform.id.value; 
+ 				self.close();
+ 				//opener.document.openerform.submit();
+     			
+ 			 }
+	</script>
+    </head>
+    
+    <body>
+    <span>
+    
+    
+ 	<form action=Control method="get" target="main" onsubmit= "CloseAndRefresh()" id=popupform>
+ 	<input type=hidden name=op value=pay>
+ 	<input type=text id=id >
+ 	<legend>Payment</legend>
+  	<label class="radio">
+  	<input type="radio" name="type" value="card" checked>
+  	Card
+	</label>
+	<label class="radio">
+  	<input type="radio" name="type" value="cash" >
+  	Cash
+	</label>
+	
+	<label class="text">
+	Card Details
+  	<input type="text" name="detail">
+	</label>
+	
+	<span><button class="btn btn-info"  >Pay</button></span>
+
+	</form>
+	   
+	</body>
+</html>

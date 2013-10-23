@@ -1,0 +1,57 @@
+<html>
+	<head>
+  	    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+    
+    	<script >
+ 			function CloseAndRefresh() 
+ 			 {
+ 				//opener.location.reload(true);
+ 				//opener.document.openerform.coffee.value=document.popupform.coffee.value; 
+ 				self.close();
+ 				//opener.document.openerform.submit();
+     			
+ 			 }
+	</script>
+    </head>
+    
+    <body>
+    <h3>New Order</h3>
+    <span>
+    <legend>Which Coffee?</legend>
+    
+ 	<form action=Control method="post" onsubmit= "CloseAndRefresh()">
+ 	<input type=hidden name=op value=create>
+  	<label class="radio">
+  	<input type="radio" name="coffee" value="latte" checked>
+  	Latte
+	</label>
+	<label class="radio">
+  	<input type="radio" name="coffee" value="flat%20white" >
+  	Flat White
+	</label>
+	<label class="radio">
+  	<input type="radio" name="coffee" value="cappuccino">
+  	 Cappuccino
+	</label>
+	<label class="radio">
+  	<input type="radio" name="coffee" value="long%20black">
+  	 Long Black
+	</label>
+	<label class="radio">
+  	<input type="radio" name="coffee" value="short%20black">
+  	 Short Black
+	</label>
+	<label class="radio">
+  	<input type="radio" name="coffee" value="mocha">
+  	 Mocha
+	</label>
+	<span><button class="btn btn-info"  >Order</button></span>
+
+	</form>
+	   
+	</body>
+</html>
